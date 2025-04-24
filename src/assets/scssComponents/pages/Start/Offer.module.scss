@@ -1,0 +1,29 @@
+.offer__content__items {
+    display: flex;
+    align-items: center;
+}
+
+.offer__content__items__info {
+
+    h1 {
+        font-weight: 700;
+        font-size: 48px;
+        max-width: 683px;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 24px;
+        max-width: 734px;
+        margin-bottom: 30px;
+    }
+    button {
+        font-size: 16px;
+        background: #af0d13;
+        border-radius: 15px;
+        padding: 15px 40px;
+    }
+}
+
+.offer__content__items__img {
+    margin-left: auto;
+}

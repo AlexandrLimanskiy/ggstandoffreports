@@ -1,0 +1,30 @@
+.channel_add {
+    margin-bottom: 50px;
+}
+
+.channel_add__content__items__form {
+    form {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.channel_add__content__items__form__input {
+    width: 200px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.channel_add__content__items__form__button {
+    width: 150px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.channel_add__content__items__form__button:hover {
+    cursor: pointer;
+}

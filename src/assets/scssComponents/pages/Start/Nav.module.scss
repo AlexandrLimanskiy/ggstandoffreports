@@ -1,0 +1,23 @@
+.nav {
+    padding-top: 52px;
+    margin-bottom: 180px;
+}
+
+.nav__content__items {
+    display: flex;
+    align-items: center;
+}
+
+.nav__content__logo {
+    margin-right: 280px;
+}
+
+.nav__content__items__list {
+    ul {
+        display: flex;
+        gap: 50px;
+        li {
+            font-size: 18px;
+        }
+    }
+}

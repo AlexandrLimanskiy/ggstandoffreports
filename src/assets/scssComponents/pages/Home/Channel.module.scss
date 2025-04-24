@@ -1,0 +1,48 @@
+.channel__content__items__item {
+    background: linear-gradient(135deg, #a01d1d 0%, #3a0b0b 100%);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 900px;
+}
+
+.channel__content__items__item__buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 15px;
+}
+
+.channel__content__items__item__title {
+    margin-right: 30px;
+
+    h3 {
+        font-size: 24px;
+    }
+}
+
+.channel__content__items__item__description {
+    max-width: 150px;
+    p {
+
+    }
+}
+
+.channel__content__items__item__link {
+    a {
+        font-size: 14px;
+        padding: 8px 36px;
+        background: #a90000;
+        border-radius: 10px;
+    }
+}
+
+.channel__content__items__item__delete {
+
+}
+
+.channel__content__items__item__delete:hover {
+    button {
+        cursor: pointer;
+    }
+}
