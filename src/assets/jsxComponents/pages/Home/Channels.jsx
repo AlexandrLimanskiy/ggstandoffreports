@@ -4,6 +4,7 @@ import ChannelAdd from "./ChannelAdd";
 import defaultChannels from '/src/assets/data/dataChannels.js';
 
 import styles from '/src/assets/scssComponents/pages/Home/Channel.module.scss';
+import ChannelImport from "./ChannelImport";
 
 export default function Channels() {
 
@@ -11,6 +12,10 @@ export default function Channels() {
     const stored = localStorage.getItem("channels");
     return stored ? JSON.parse(stored) : [];
   });
+
+  const handleImport = (importedChannels) => {
+    setChannels([...channels, ...importedChannels]);
+  };
 
   useEffect(() => {
     localStorage.setItem("channels", JSON.stringify(channels));
@@ -30,6 +35,7 @@ export default function Channels() {
       <div className="channels">
         <div className="channels__content">
           <ChannelAdd onAdd={addChannel} />
+          <ChannelImport onImport={handleImport} />
           <div className="channels__content__items">
             {channels.map((channel, index) => (
               <Channel key={index} title={channel.title} description={channel.description} link={channel.link} onDelete={() => deleteChannel(index)} />
