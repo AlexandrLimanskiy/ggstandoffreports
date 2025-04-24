@@ -4,18 +4,19 @@
     display: flex;
     align-items: center;
     border-radius: 10px;
-    max-width: 900px;
+    max-width: 1200px;
 }
 
 .channel__content__items__item__buttons {
     margin-left: auto;
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
 .channel__content__items__item__title {
     margin-right: 30px;
-
+    max-width: 250px;
     h3 {
         font-size: 24px;
     }
@@ -54,6 +55,7 @@
 }
 
 .channel__content__items__item__checkbox {
+    margin-right: 20px;
     label {
         display: flex;
         align-items: center;
@@ -68,4 +70,47 @@
 .channels__content__buttons {
     display: flex;
     gap: 20px;
+}
+
+/* контейнер со статусом */
+.channel__content__items__item__status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+ 
+}
+
+/* селект для смены статуса */
+.statusSelect {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid gray;
+  border-radius: 8px;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+/* общий бейдж */
+.statusBadge {
+  display: inline-block;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #fff;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+/* вариации бейджа */
+.statusBadge--approved {
+  background-color: #28a745; /* зелёный */
+}
+
+.statusBadge--pending {
+  background-color: #ffc107; /* жёлтый */
+  color: #212529;
+}
+
+.statusBadge--rejected {
+  background-color: #dc3545; /* красный */
 }
