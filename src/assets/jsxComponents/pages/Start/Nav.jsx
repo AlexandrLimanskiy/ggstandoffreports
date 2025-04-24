@@ -7,7 +7,7 @@ export default function Nav() {
                 <div className="nav__content">
                     <div className={styles.nav__content__items}>
                         <div className={styles.nav__content__logo}>
-                            <img src="/public/img/pages/Start/logo.svg" alt="" />
+                            <img src="img/pages/Start/logo.svg" alt="" />
                         </div>
                         <div className={styles.nav__content__items__list}>
                             <ul>

@@ -19,7 +19,7 @@ export default function Channel({ title, description, link, onDelete }) {
               </div>
               <div className={styles.channel__content__items__item__buttons}>
                 <div className={styles.channel__content__items__item__link}>
-                  <a href={link}>
+                  <a href={link} target='_blank'>
                     Перейти
                   </a>
                 </div>

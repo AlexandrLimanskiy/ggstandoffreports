@@ -23,7 +23,7 @@ export default function Offer() {
                             </Link>
                         </div>
                         <div className={styles.offer__content__items__img}>
-                            <img src="/public/img/pages/Start/G.svg" alt="" />
+                            <img src="img/pages/Start/G.svg" alt="" />
                         </div>
                     </div>
                 </div>
