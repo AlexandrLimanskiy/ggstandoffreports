@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 import styles from '/src/assets/scssComponents/pages/Start/Nav.module.scss'
 
 export default function Nav() {
@@ -11,7 +13,7 @@ export default function Nav() {
                         </div>
                         <div className={styles.nav__content__items__list}>
                             <ul>
-                                <li><a href="#">Главная</a></li>
+                                <li><Link to="http://localhost:5173/ggstandoffreports//">Главная</Link></li>
                                 <li><a href="#">Отчёты</a></li>
                                 <li><a href="#">О проекте</a></li>
                                 <li><a href="#">Контакты</a></li>
