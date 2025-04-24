@@ -38,11 +38,34 @@
 }
 
 .channel__content__items__item__delete {
-
+    margin-right: 20px;
 }
 
 .channel__content__items__item__delete:hover {
     button {
         cursor: pointer;
     }
+}
+
+.channels__content__items {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.channel__content__items__item__checkbox {
+    label {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    input {
+        width: 20px;
+        height: 20px;
+    }
+}
+
+.channels__content__buttons {
+    display: flex;
+    gap: 20px;
 }

@@ -1,3 +1,26 @@
-.channel_import__content__items__import_button {
+.channel_import {
+    margin-bottom: 50px; // как в .channel_add
+  
+    &__content__items {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+  }
+  
+  .hiddenInput {
     display: none;
-}
+  }
+  
+  .importButton {
+    max-width: 200px;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    background: none;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.2s;
+  }
+  

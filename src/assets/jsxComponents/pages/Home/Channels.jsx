@@ -34,9 +34,11 @@ export default function Channels() {
     <>
       <div className="channels">
         <div className="channels__content">
-          <ChannelAdd onAdd={addChannel} />
-          <ChannelImport onImport={handleImport} />
-          <div className="channels__content__items">
+          <div className={styles.channels__content__buttons}>
+            <ChannelAdd onAdd={addChannel} />
+            <ChannelImport onImport={handleImport} />
+          </div>
+          <div className={styles.channels__content__items}>
             {channels.map((channel, index) => (
               <Channel key={index} title={channel.title} description={channel.description} link={channel.link} onDelete={() => deleteChannel(index)} />
             ))}
