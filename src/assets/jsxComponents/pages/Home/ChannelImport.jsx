@@ -1,4 +1,3 @@
-import React from "react";
 import Papa from "papaparse";
 import styles from "/src/assets/scssComponents/pages/Home/ChannelImport.module.scss";
 
@@ -9,7 +8,13 @@ export default function ChannelImport({ onImport }) {
       header: true,
       skipEmptyLines: true,
       complete: (results) => {
-        onImport(results.data);
+        // Добавляем visited и status по умолчанию
+        const imported = results.data.map(item => ({
+          ...item,
+          visited: false,
+          status: 'pending',
+        }));
+        onImport(imported);
       },
     });
   };
@@ -18,7 +23,6 @@ export default function ChannelImport({ onImport }) {
     <div className={styles.channel_import}>
       <div className={styles.channel_import__content}>
         <div className={styles.channel_import__content__items}>
-          {/* Скрытый нативный инпут */}
           <input
             id="csvUpload"
             type="file"
@@ -26,7 +30,6 @@ export default function ChannelImport({ onImport }) {
             onChange={handleFileUpload}
             className={styles.hiddenInput}
           />
-          {/* Эта метка будет нашей кнопкой */}
           <label htmlFor="csvUpload" className={styles.importButton}>
             📂 Загрузить CSV
           </label>
